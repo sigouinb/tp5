@@ -3,7 +3,6 @@ Modèle de départ pour la programmation Arcade.
 Il suffit de modifier les méthodes nécessaires à votre jeu.
 """
 import random
-
 import arcade
 #import arcade.gui
 
@@ -59,7 +58,8 @@ class MyGame(arcade.Window):
        # C'est ici que vous allez créer vos listes de sprites et vos sprites.
        # Prenez note que vous devriez attribuer une valeur à tous les attributs créés dans __init__
 
-       pass
+       self.player = arcade.Sprite("assets/faceBeard.png", 0.5, center_x=150, center_y=350)
+       self.player = arcade.Sprite("assets/compy.png", 2.40, center_x=875, center_y=350)
 
 
 
